@@ -1,38 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
 .App {
-  text-align: center;
+  background: rgb(43,43,43);
+  background: linear-gradient(90deg, rgba(43,43,43,1) 0%, rgba(0,0,0,0.9556197478991597) 50%, rgba(45,45,45,1) 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.liste {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.filtre {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 100px;
+  margin: 0 auto;
+}
+.filtre h1 {
+  color: red;
+  font-weight: bold;
+  font-family: "Patrick Hand", cursive;
+  font-size: 40px;
+  animation: 3s ease-in 1s infinite bounceIn;
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.info {
+  color: rgb(14, 12, 12);
+  text-align: center;
+  font-style: oblique;
+  font-size: medium;
+}
+
+.ratiing {
+  margin-left: 80px;
+}
+
+section {
+  padding: 15px;
+}
+
+.content {
+  background-color: rgba(219, 216, 216, 0.452);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: rgb(15, 15, 15);
+  font-weight: 600;
+  padding: 1rem;
+  transform: translateY(110%);
+  transition: transform 0.3s ease-in-out;
+  overflow: auto;
+  max-height: 100%;
+}
+
+.ggg:hover .content {
+  transform: translateY(0%);
+}
+
+.ggg {
+  overflow: hidden;
+  position: relative;
+}
+
+button {
+  background-color: red;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .test {
+    margin-left: 380px !important;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .test {
+    margin-left: 290px !important;
+  }
+  .filtre {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .ff {
+    height: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .test {
+    margin-left: 230px !important;
+  }
+  .filtre {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .test {
+    margin-left: 200px !important;
+  }
+  .filtre {
+    font-display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  h1 {
+    margin-left: 30px;
+  }
+  .react-stars-wrapper-04579980956101508 {
+    margin-left: 50px !important;
+  }
+}
+@media screen and (max-width: 547px) {
+  .test {
+    margin-left: 190px !important;
+  }
+  .filtre {
+    font-display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  h1 {
+    margin-left: 80px;
+  }
+  .react-stars-wrapper-04579980956101508 {
+    margin-left: 48px !important;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .react-stars-wrapper-04579980956101508 {
+    margin-left: 45px !important;
+  }
+}
+@media screen and (max-width: 541px) {
+  .react-stars-wrapper-04579980956101508 {
+    margin-left: 40px !important;
+  }
+}
+
+@media screen and (max-width: 534px) {
+  .react-stars-wrapper-04579980956101508 {
+    margin-left: 35px !important;
+  }
+}
+
+@media screen and (max-width: 528px) {
+  .react-stars-wrapper-04579980956101508 {
+    margin-left: 30px !important;
+  }
+}
+
+@media screen and (max-width: 522px) {
+  .react-stars-wrapper-04579980956101508 {
+    margin-left: 25px !important;
+  }
+}
+
+@media screen and (max-width: 516px) {
+  .react-stars-wrapper-04579980956101508 {
+    margin-left: 20px !important;
+  }
+}
+
+@media screen and (max-width: 509px) {
+  .react-stars-wrapper-04579980956101508 {
+    margin-left: 15px !important;
+  }
+}
+@media screen and (max-width: 504px) {
+  .react-stars-wrapper-04579980956101508 {
+    margin-left: 10px !important;
+  }
+}
+
+@media screen and (max-width: 497px) {
+  .react-stars-wrapper-04579980956101508 {
+    margin-left: 5px !important;
+  }
+}
+@media screen and (max-width: 492px) {
+  .react-stars-wrapper-04579980956101508 {
+    margin-left: 4px !important;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .react-stars-wrapper-04579980956101508 {
+    margin-left: 3px !important;
+  }
+  .filtre {
+    font-display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 873px) {
+  .filtre {
+    font-display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .ff {
+    height: 1rem !important;
+  }
+  .test {
+    margin-left: 320px !important;
+  }
+}
+
+.hdesc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80px;
+  height: 100%;
+  width: 100%;
+}
+.desc {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 50%;
+}
+
+.desc h1 {
+  color: red;
+  font-style: oblique;
+}
+.desc h5 {
   color: white;
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
 }
-
-.App-link {
-  color: #61dafb;
+.hdesc img {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buutt {
+  margin-left: 1000px;
 }
